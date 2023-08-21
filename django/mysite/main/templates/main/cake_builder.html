@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<style>
+    body{
+        background-color: #F6D9FA}
+    header{
+        align: center}
+</style>
+<html>
+<header>
+    <h1>WELCOME!</h1>
+</header>
+<head>
+    <title>Cake Builder</title>
+</head>
+<body>
+    <h1>Cake Builder</h1>
+    <ul>
+    {% for cake in cakes %}
+        <li>{{ cake.name }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

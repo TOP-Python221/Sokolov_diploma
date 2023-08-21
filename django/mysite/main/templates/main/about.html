@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<style>
+    body {
+        background-color: #F6D9FA
+
+</style>
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>About</title>
+    <title></title>
 </head>
 <body>
-    <div>
-        <p>Created by Sokoloff Diploma</p>
-    </div>
-    <div>
-        <div align="right">
-            <em>Powered by Django 4.1</em>
-        </div>
-    </div>
+    <h1>2nd title</h1>
+    <ul>
+    {% for cake in cakes %}
+        <li>{{ cake.name }}</li>
+    {% endfor %}
+    </ul>
 </body>
 </html>
